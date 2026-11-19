@@ -1,0 +1,47 @@
+name: Update Smart Profile Telemetry & Snake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh live telemetry SVG and activity feed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: sahil0017
+        run: python3 scripts/update_profile.py
+
+      - name: Generate animated contribution snake (dark & light)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: sahil0017
+          outputs: |
+            assets/snake-light.svg
+            assets/snake-dark.svg?palette=github-dark
+
+      - name: Commit and push updated telemetry & animations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/telemetry.svg assets/snake-dark.svg assets/snake-light.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: auto-sync live profile telemetry and contribution snake"
+            git push
+          else
+            echo "No changes to commit."
+          fi

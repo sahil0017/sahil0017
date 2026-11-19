@@ -1,0 +1,77 @@
+<svg width="1200" height="132" viewBox="0 0 1200 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090E1A"/>
+    </linearGradient>
+    <filter id="pGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .pipe {
+      stroke-dasharray: 5 5;
+      animation: flowRight 1.4s linear infinite;
+    }
+    @keyframes flowRight {
+      to { stroke-dashoffset: -20; }
+    }
+  </style>
+
+  <!-- Connecting Pipes -->
+  <line x1="258" y1="66" x2="322" y2="66" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.55" class="pipe"/>
+  <line x1="578" y1="66" x2="642" y2="66" stroke="#818CF8" stroke-width="2" stroke-opacity="0.55" class="pipe"/>
+  <line x1="898" y1="66" x2="962" y2="66" stroke="#34D399" stroke-width="2" stroke-opacity="0.55" class="pipe"/>
+
+  <!-- Flowing Packets -->
+  <circle r="3.5" fill="#38BDF8" filter="url(#pGlow)">
+    <animateMotion dur="1.5s" repeatCount="indefinite" path="M 258 66 L 322 66"/>
+  </circle>
+  <circle r="3.5" fill="#818CF8" filter="url(#pGlow)">
+    <animateMotion dur="1.5s" begin="0.5s" repeatCount="indefinite" path="M 578 66 L 642 66"/>
+  </circle>
+  <circle r="3.5" fill="#34D399" filter="url(#pGlow)">
+    <animateMotion dur="1.5s" begin="1.0s" repeatCount="indefinite" path="M 898 66 L 962 66"/>
+  </circle>
+
+  <!-- Stage 1: Surfaces -->
+  <g transform="translate(8, 16)">
+    <rect width="250" height="100" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5"/>
+    <rect x="0" y="0" width="250" height="3" rx="1.5" fill="#38BDF8"/>
+    <text x="18" y="30" fill="#38BDF8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11" font-weight="700" letter-spacing="0.8">01 · SURFACES</text>
+    <text x="18" y="54" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="600">Web, Native &amp; Edge</text>
+    <text x="18" y="78" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11">React 19 · SwiftUI · Expo · MV3</text>
+  </g>
+
+  <!-- Stage 2: Control Plane -->
+  <g transform="translate(322, 16)">
+    <rect width="256" height="100" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5"/>
+    <rect x="0" y="0" width="256" height="3" rx="1.5" fill="#818CF8"/>
+    <text x="18" y="30" fill="#818CF8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11" font-weight="700" letter-spacing="0.8">02 · CONTROL PLANE</text>
+    <text x="18" y="54" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="600">Durable APIs &amp; Outbox</text>
+    <text x="18" y="78" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11">Go · Spring Boot · NATS · SSE</text>
+  </g>
+
+  <!-- Stage 3: Agent & ML Runtime -->
+  <g transform="translate(642, 16)">
+    <rect width="256" height="100" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5"/>
+    <rect x="0" y="0" width="256" height="3" rx="1.5" fill="#A78BFA"/>
+    <text x="18" y="30" fill="#A78BFA" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11" font-weight="700" letter-spacing="0.8">03 · INTELLIGENCE</text>
+    <text x="18" y="54" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="600">Agentic &amp; ML Runtimes</text>
+    <text x="18" y="78" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11">LangGraph · PyTorch · Bedrock · AI</text>
+  </g>
+
+  <!-- Stage 4: Data & Cloud -->
+  <g transform="translate(962, 16)">
+    <rect width="230" height="100" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5"/>
+    <rect x="0" y="0" width="230" height="3" rx="1.5" fill="#34D399"/>
+    <text x="18" y="30" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11" font-weight="700" letter-spacing="0.8">04 · STATE &amp; CLOUD</text>
+    <text x="18" y="54" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="600">Persistence &amp; Infra</text>
+    <text x="18" y="78" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11">Postgres RLS · AWS · Helm · SQLite</text>
+  </g>
+</svg>

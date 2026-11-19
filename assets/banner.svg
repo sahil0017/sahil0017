@@ -1,58 +1,167 @@
-<svg width="1200" height="240" viewBox="0 0 1200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="240" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0B1120"/>
-      <stop offset="55%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#111827"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="50%" stop-color="#0D1526"/>
+      <stop offset="100%" stop-color="#0A101D"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#38BDF8"/>
       <stop offset="50%" stop-color="#818CF8"/>
       <stop offset="100%" stop-color="#34D399"/>
     </linearGradient>
-    <radialGradient id="glow1" cx="0.82" cy="0.28" r="0.45">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.18"/>
+    <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0.35"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.78" cy="0.45" r="0.42">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="0.15" cy="0.85" r="0.4">
-      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.14"/>
+    <radialGradient id="glow2" cx="0.18" cy="0.85" r="0.38">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.16"/>
       <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.75" opacity="0.55"/>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#1E293B" stroke-width="0.75" opacity="0.5"/>
     </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1200" height="240" rx="14" fill="url(#bg)"/>
-  <rect width="1200" height="240" rx="14" fill="url(#grid)"/>
-  <rect width="1200" height="240" rx="14" fill="url(#glow1)"/>
-  <rect width="1200" height="240" rx="14" fill="url(#glow2)"/>
-  <rect x="0.75" y="0.75" width="1198.5" height="238.5" rx="13.25" stroke="#1E293B" stroke-width="1.5"/>
+  <style>
+    .pulse-ring {
+      animation: ringPulse 2.6s ease-out infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    .hub-pulse {
+      animation: hubGlow 3s ease-in-out infinite;
+    }
+    .blink {
+      animation: cursorBlink 1.1s step-end infinite;
+    }
+    .dash-flow {
+      stroke-dasharray: 6 6;
+      animation: dashMove 1.8s linear infinite;
+    }
+    @keyframes ringPulse {
+      0% { transform: scale(1); opacity: 0.9; }
+      100% { transform: scale(2.4); opacity: 0; }
+    }
+    @keyframes hubGlow {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    @keyframes cursorBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes dashMove {
+      to { stroke-dashoffset: -24; }
+    }
+  </style>
 
-  <!-- Top accent bar -->
-  <rect x="56" y="42" width="64" height="4" rx="2" fill="url(#accent)"/>
+  <!-- Background & Grid -->
+  <rect width="1200" height="260" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="260" rx="16" fill="url(#grid)"/>
+  <rect width="1200" height="260" rx="16" fill="url(#glow1)"/>
+  <rect width="1200" height="260" rx="16" fill="url(#glow2)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="258.5" rx="15.25" stroke="#1E293B" stroke-width="1.5"/>
 
-  <!-- Name & Subtitle -->
-  <text x="56" y="102" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-0.8">Sahil Kanungo</text>
-  <text x="56" y="140" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500">Systems &amp; Agentic AI Engineer</text>
-  <text x="56" y="176" fill="#64748B" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13.5">Go · Python · TypeScript · Distributed Control Planes · Multi-Agent Runtimes · AWS</text>
-
-  <!-- Minimal distributed graph motif on the right -->
-  <g stroke="#334155" stroke-width="1.5" opacity="0.9">
-    <line x1="870" y1="74" x2="965" y2="118"/>
-    <line x1="870" y1="168" x2="965" y2="118"/>
-    <line x1="965" y1="118" x2="1065" y2="78"/>
-    <line x1="965" y1="118" x2="1065" y2="162"/>
-    <line x1="1065" y1="78" x2="1130" y2="118"/>
-    <line x1="1065" y1="162" x2="1130" y2="118"/>
+  <!-- Live Status Pill -->
+  <g transform="translate(56, 36)">
+    <rect width="234" height="26" rx="13" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="16" cy="13" r="4" fill="#34D399" class="pulse-ring"/>
+    <circle cx="16" cy="13" r="3.5" fill="#34D399"/>
+    <text x="28" y="17" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" letter-spacing="0.8">CONTROL PLANE · ONLINE</text>
   </g>
+
+  <!-- Name & Positioning -->
+  <text x="56" y="114" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="-1">Sahil Kanungo</text>
+  <rect x="56" y="128" width="96" height="3.5" rx="1.75" fill="url(#accent)"/>
+  <text x="56" y="164" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500">Systems &amp; Agentic AI Engineer</text>
+
+  <!-- Animated Terminal Subtitle -->
+  <g transform="translate(56, 188)">
+    <rect width="635" height="34" rx="8" fill="#0B1220" stroke="#1E293B" stroke-width="1"/>
+    <text x="14" y="21" fill="#38BDF8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13">$</text>
+    <text x="28" y="21" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12.5">building --stack="Go · Python · TypeScript · AWS" --focus="Agents &amp; Control Planes"</text>
+    <rect x="614" y="11" width="7" height="13" rx="1" fill="#34D399" class="blink"/>
+  </g>
+
+  <!-- Animated Distributed Systems Topology (Right Side) -->
   <g>
-    <circle cx="870" cy="74" r="6" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
-    <circle cx="870" cy="168" r="6" fill="#0F172A" stroke="#818CF8" stroke-width="2"/>
-    <circle cx="965" cy="118" r="9" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
-    <circle cx="965" cy="118" r="3" fill="#38BDF8"/>
-    <circle cx="1065" cy="78" r="6" fill="#0F172A" stroke="#34D399" stroke-width="2"/>
-    <circle cx="1065" cy="162" r="6" fill="#0F172A" stroke="#818CF8" stroke-width="2"/>
-    <circle cx="1130" cy="118" r="7" fill="#0F172A" stroke="#34D399" stroke-width="2"/>
+    <!-- Edges with animated dashes -->
+    <path id="e1" d="M 790 76 L 910 130" stroke="url(#edgeGrad)" stroke-width="1.6" class="dash-flow"/>
+    <path id="e2" d="M 790 184 L 910 130" stroke="url(#edgeGrad)" stroke-width="1.6" class="dash-flow"/>
+    <path id="e3" d="M 910 130 L 1035 76" stroke="url(#edgeGrad)" stroke-width="1.6" class="dash-flow"/>
+    <path id="e4" d="M 910 130 L 1035 184" stroke="url(#edgeGrad)" stroke-width="1.6" class="dash-flow"/>
+    <path id="e5" d="M 1035 76 L 1135 130" stroke="url(#edgeGrad)" stroke-width="1.6" class="dash-flow"/>
+    <path id="e6" d="M 1035 184 L 1135 130" stroke="url(#edgeGrad)" stroke-width="1.6" class="dash-flow"/>
+
+    <!-- Animated glowing packets -->
+    <circle r="3.2" fill="#38BDF8" filter="url(#glow)">
+      <animateMotion dur="2.2s" repeatCount="indefinite" path="M 790 76 L 910 130"/>
+    </circle>
+    <circle r="3.2" fill="#818CF8" filter="url(#glow)">
+      <animateMotion dur="2.6s" begin="0.4s" repeatCount="indefinite" path="M 790 184 L 910 130"/>
+    </circle>
+    <circle r="3.2" fill="#34D399" filter="url(#glow)">
+      <animateMotion dur="2.1s" begin="0.8s" repeatCount="indefinite" path="M 910 130 L 1035 76"/>
+    </circle>
+    <circle r="3.2" fill="#38BDF8" filter="url(#glow)">
+      <animateMotion dur="2.4s" begin="1.1s" repeatCount="indefinite" path="M 910 130 L 1035 184"/>
+    </circle>
+    <circle r="3" fill="#34D399" filter="url(#glow)">
+      <animateMotion dur="2.0s" begin="1.5s" repeatCount="indefinite" path="M 1035 76 L 1135 130"/>
+    </circle>
+    <circle r="3" fill="#818CF8" filter="url(#glow)">
+      <animateMotion dur="2.3s" begin="1.7s" repeatCount="indefinite" path="M 1035 184 L 1135 130"/>
+    </circle>
+
+    <!-- Nodes + Labels -->
+    <g transform="translate(790, 76)">
+      <circle r="11" fill="#0B1220" stroke="#38BDF8" stroke-width="2"/>
+      <circle r="3.5" fill="#38BDF8"/>
+      <text y="-18" text-anchor="middle" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">CLIENTS</text>
+    </g>
+
+    <g transform="translate(790, 184)">
+      <circle r="11" fill="#0B1220" stroke="#818CF8" stroke-width="2"/>
+      <circle r="3.5" fill="#818CF8"/>
+      <text y="26" text-anchor="middle" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">EDGE / LENS</text>
+    </g>
+
+    <g transform="translate(910, 130)">
+      <circle r="22" fill="#38BDF8" fill-opacity="0.08" class="pulse-ring"/>
+      <circle r="16" fill="#0B1220" stroke="#38BDF8" stroke-width="2.5" class="hub-pulse"/>
+      <circle r="5" fill="#38BDF8"/>
+      <text y="33" text-anchor="middle" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5" font-weight="600">CONTROL PLANE</text>
+    </g>
+
+    <g transform="translate(1035, 76)">
+      <circle r="11" fill="#0B1220" stroke="#34D399" stroke-width="2"/>
+      <circle r="3.5" fill="#34D399"/>
+      <text y="-18" text-anchor="middle" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">AGENTS</text>
+    </g>
+
+    <g transform="translate(1035, 184)">
+      <circle r="11" fill="#0B1220" stroke="#818CF8" stroke-width="2"/>
+      <circle r="3.5" fill="#818CF8"/>
+      <text y="26" text-anchor="middle" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">DATA / RLS</text>
+    </g>
+
+    <g transform="translate(1135, 130)">
+      <circle r="12" fill="#0B1220" stroke="#34D399" stroke-width="2"/>
+      <circle r="4" fill="#34D399"/>
+      <text y="28" text-anchor="middle" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">CLOUD</text>
+    </g>
   </g>
 </svg>
