@@ -20,7 +20,7 @@
   <line x1="40" y1="198" x2="720" y2="198" stroke="#334155" stroke-width="1.2"/>
 
   <!-- Trendline Overlay -->
-  <polyline points="57.0,145.6 106.7,163.0 156.4,110.6 206.1,101.9 255.8,145.6 305.5,171.8 355.2,128.1 404.8,80.0 454.5,176.1 504.2,194.0 553.9,194.0 603.6,149.9 653.3,192.0 703.0,176.1" fill="none" stroke="#34D399" stroke-width="1.6" stroke-opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="57.0,145.6 106.7,163.0 156.4,110.6 206.1,101.9 255.8,145.6 305.5,171.8 355.2,128.1 404.8,80.0 454.5,176.1 504.2,194.0 553.9,194.0 603.6,149.9 653.3,192.0 703.0,154.3" fill="none" stroke="#34D399" stroke-width="1.6" stroke-opacity="0.55" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Animated Daily Bars -->
     <g>
@@ -128,12 +128,12 @@
       <text x="653.3" y="186.0" text-anchor="middle" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5">1</text>
     </g>
     <g>
-      <rect x="686.0" y="176.1" width="34" height="21.9" rx="5" fill="url(#vBar)">
-        <animate attributeName="height" from="0" to="21.9" dur="0.9s" begin="0.78s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
-        <animate attributeName="y" from="198" to="176.1" dur="0.9s" begin="0.78s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+      <rect x="686.0" y="154.3" width="34" height="43.7" rx="5" fill="url(#vBar)">
+        <animate attributeName="height" from="0" to="43.7" dur="0.9s" begin="0.78s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+        <animate attributeName="y" from="198" to="154.3" dur="0.9s" begin="0.78s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
       </rect>
       <text x="703.0" y="216" text-anchor="middle" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5">11-19</text>
-      <text x="703.0" y="170.1" text-anchor="middle" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5">5</text>
+      <text x="703.0" y="148.3" text-anchor="middle" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5">10</text>
     </g>
 
   <!-- Divider -->
@@ -146,7 +146,7 @@
     <g transform="translate(0, 28)">
       <rect width="180" height="74" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
       <text x="14" y="25" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">COMMITS (30D)</text>
-      <text x="14" y="56" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="700">240</text>
+      <text x="14" y="56" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="700">245</text>
     </g>
 
     <g transform="translate(196, 28)">
@@ -168,5 +168,5 @@
     </g>
   </g>
 
-  <text x="1164" y="238" text-anchor="end" fill="#475569" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">Computed from live commit logs · 2026-11-19 06:49 UTC</text>
+  <text x="1164" y="238" text-anchor="end" fill="#475569" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">Computed from live commit logs · 2026-11-19 19:54 UTC</text>
 </svg>
