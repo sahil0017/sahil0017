@@ -15,10 +15,18 @@
 
 ---
 
-## Live Telemetry
+## Live Engineering Dashboards
 
 <p align="center">
   <img src="./assets/telemetry.svg" alt="Live GitHub Telemetry & Animated Language Breakdown" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./assets/systems-status.svg" alt="Flagship Systems Mission Control — Live Health & Deployment Matrix" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./assets/velocity.svg" alt="14-Day Engineering Commit Velocity & 30-Day Momentum" width="100%" />
 </p>
 
 ### Recent Engineering Feed
@@ -32,7 +40,7 @@
 | **[Systera](https://github.com/sahil0017/Systera)** | `Go` | docs: add stack badges and high-level architecture diagram to R… | `2026-11-19` |
 | **[JobIntelligenceAgent](https://github.com/sahil0017/JobIntelligenceAgent)** | `Go` | feat: single-stack AWS Always-Free CareerPilot, DynamoDB dual-s… | `2026-11-18` |
 
-<sub>Auto-updated every 6 hours via GitHub Actions · Last sync: `2026-11-19 06:47 UTC`</sub>
+<sub>Auto-updated every 6 hours via GitHub Actions · Last sync: `2026-11-19 06:49 UTC`</sub>
 <!-- LIVE_ACTIVITY:END -->
 
 ---

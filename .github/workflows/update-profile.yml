@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/telemetry.svg assets/snake-dark.svg assets/snake-light.svg
+          git add README.md assets/telemetry.svg assets/systems-status.svg assets/velocity.svg assets/snake-dark.svg assets/snake-light.svg
           if ! git diff --cached --quiet; then
             git commit -m "chore: auto-sync live profile telemetry and contribution snake"
             git push

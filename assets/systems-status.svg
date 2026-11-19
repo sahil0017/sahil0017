@@ -1,0 +1,122 @@
+<svg width="1200" height="306" viewBox="0 0 1200 306" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sBg" x1="0" y1="0" x2="1200" y2="306" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#070C17"/>
+      <stop offset="100%" stop-color="#0D1628"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .st-pulse {
+      animation: stPing 2.8s ease-out infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    @keyframes stPing {
+      0% { transform: scale(1); opacity: 0.85; }
+      100% { transform: scale(2.2); opacity: 0; }
+    }
+  </style>
+
+  <rect width="1200" height="306" rx="14" fill="url(#sBg)" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="32" y="34" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11.5" font-weight="700" letter-spacing="0.9">FLAGSHIP SYSTEMS MISSION CONTROL · LIVE HEALTH &amp; DEPLOYMENT MATRIX</text>
+  <text x="1168" y="34" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11">8 / 8 SYSTEMS OPERATIONAL</text>
+
+  <g transform="translate(32, 58)">
+    <rect width="272" height="104" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="272" height="2.5" rx="1.25" fill="#00ADD8"/>
+    <circle cx="18" cy="24" r="4" fill="#34D399" class="st-pulse"/>
+    <circle cx="18" cy="24" r="3.2" fill="#34D399"/>
+    <text x="30" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="700">Systera</text>
+    <text x="258" y="27" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5" font-weight="700">ACTIVE</text>
+    <text x="16" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Autonomous Eng Control Plane</text>
+    <circle cx="20" cy="82" r="3.5" fill="#00ADD8"/>
+    <text x="30" y="86" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">Go</text>
+    <text x="258" y="86" text-anchor="end" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">★ 0 · 2026-11-19</text>
+  </g>
+  <g transform="translate(320, 58)">
+    <rect width="272" height="104" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="272" height="2.5" rx="1.25" fill="#00ADD8"/>
+    <circle cx="18" cy="24" r="4" fill="#34D399" class="st-pulse"/>
+    <circle cx="18" cy="24" r="3.2" fill="#34D399"/>
+    <text x="30" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="700">CareerPilot AI</text>
+    <text x="258" y="27" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5" font-weight="700">ONLINE · 200</text>
+    <text x="16" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Agentic Career Command Center</text>
+    <circle cx="20" cy="82" r="3.5" fill="#00ADD8"/>
+    <text x="30" y="86" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">Go</text>
+    <text x="258" y="86" text-anchor="end" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">★ 1 · 2026-11-18</text>
+  </g>
+  <g transform="translate(608, 58)">
+    <rect width="272" height="104" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="272" height="2.5" rx="1.25" fill="#3178C6"/>
+    <circle cx="18" cy="24" r="4" fill="#34D399" class="st-pulse"/>
+    <circle cx="18" cy="24" r="3.2" fill="#34D399"/>
+    <text x="30" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="700">Nexora</text>
+    <text x="258" y="27" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5" font-weight="700">ACTIVE</text>
+    <text x="16" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Event-Driven Personal OS</text>
+    <circle cx="20" cy="82" r="3.5" fill="#3178C6"/>
+    <text x="30" y="86" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">TypeScript</text>
+    <text x="258" y="86" text-anchor="end" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">★ 1 · 2026-11-15</text>
+  </g>
+  <g transform="translate(896, 58)">
+    <rect width="272" height="104" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="272" height="2.5" rx="1.25" fill="#00ADD8"/>
+    <circle cx="18" cy="24" r="4" fill="#34D399" class="st-pulse"/>
+    <circle cx="18" cy="24" r="3.2" fill="#34D399"/>
+    <text x="30" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="700">SYNTRIX</text>
+    <text x="258" y="27" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5" font-weight="700">DMG RELEASE</text>
+    <text x="16" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">macOS C17 + Go + SwiftUI HUD</text>
+    <circle cx="20" cy="82" r="3.5" fill="#00ADD8"/>
+    <text x="30" y="86" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">Go</text>
+    <text x="258" y="86" text-anchor="end" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">★ 1 · 2026-11-14</text>
+  </g>
+  <g transform="translate(32, 178)">
+    <rect width="272" height="104" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="272" height="2.5" rx="1.25" fill="#00ADD8"/>
+    <circle cx="18" cy="24" r="4" fill="#34D399" class="st-pulse"/>
+    <circle cx="18" cy="24" r="3.2" fill="#34D399"/>
+    <text x="30" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="700">Sehat (CORTEX)</text>
+    <text x="258" y="27" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5" font-weight="700">ACTIVE</text>
+    <text x="16" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Health Records + pgvector AI</text>
+    <circle cx="20" cy="82" r="3.5" fill="#00ADD8"/>
+    <text x="30" y="86" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">Go</text>
+    <text x="258" y="86" text-anchor="end" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">★ 1 · 2026-11-17</text>
+  </g>
+  <g transform="translate(320, 178)">
+    <rect width="272" height="104" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="272" height="2.5" rx="1.25" fill="#3178C6"/>
+    <circle cx="18" cy="24" r="4" fill="#34D399" class="st-pulse"/>
+    <circle cx="18" cy="24" r="3.2" fill="#34D399"/>
+    <text x="30" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="700">LIFEOS</text>
+    <text x="258" y="27" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5" font-weight="700">EDGE AI</text>
+    <text x="16" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Local-First + Workers AI</text>
+    <circle cx="20" cy="82" r="3.5" fill="#3178C6"/>
+    <text x="30" y="86" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">TypeScript</text>
+    <text x="258" y="86" text-anchor="end" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">★ 1 · 2026-11-19</text>
+  </g>
+  <g transform="translate(608, 178)">
+    <rect width="272" height="104" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="272" height="2.5" rx="1.25" fill="#ED8B00"/>
+    <circle cx="18" cy="24" r="4" fill="#34D399" class="st-pulse"/>
+    <circle cx="18" cy="24" r="3.2" fill="#34D399"/>
+    <text x="30" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="700">AttributionIQ</text>
+    <text x="258" y="27" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5" font-weight="700">ONLINE · 200</text>
+    <text x="16" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">First-Party Attribution Pipeline</text>
+    <circle cx="20" cy="82" r="3.5" fill="#ED8B00"/>
+    <text x="30" y="86" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">Java</text>
+    <text x="258" y="86" text-anchor="end" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">★ 1 · 2026-11-02</text>
+  </g>
+  <g transform="translate(896, 178)">
+    <rect width="272" height="104" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="272" height="2.5" rx="1.25" fill="#3572A5"/>
+    <circle cx="18" cy="24" r="4" fill="#34D399" class="st-pulse"/>
+    <circle cx="18" cy="24" r="3.2" fill="#34D399"/>
+    <text x="30" y="28" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="700">SystemDesign</text>
+    <text x="258" y="27" text-anchor="end" fill="#34D399" font-family="ui-monospace, SFMono-Regular, monospace" font-size="9.5" font-weight="700">AUTO-PR</text>
+    <text x="16" y="54" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5">Staff Library + ML PR Agent</text>
+    <circle cx="20" cy="82" r="3.5" fill="#3572A5"/>
+    <text x="30" y="86" fill="#CBD5E1" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">Python</text>
+    <text x="258" y="86" text-anchor="end" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">★ 1 · 2026-11-10</text>
+  </g>
+
+  <text x="1168" y="294" text-anchor="end" fill="#475569" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10">HTTP health probes + GitHub API sync · 2026-11-19 06:49 UTC</text>
+</svg>

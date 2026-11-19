@@ -20,13 +20,11 @@
 
   <rect width="1200" height="260" rx="14" fill="url(#tBg)" stroke="#1E293B" stroke-width="1.5"/>
 
-  <!-- Left Panel: Live Metrics -->
   <g transform="translate(36, 28)">
     <circle cx="8" cy="8" r="4" fill="#34D399" class="sync-pulse"/>
     <circle cx="8" cy="8" r="3.5" fill="#34D399"/>
     <text x="22" y="12" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11.5" font-weight="600" letter-spacing="0.9">LIVE GITHUB TELEMETRY · AUTO-SYNCED</text>
 
-    <!-- Metric Cards 2x2 -->
     <g transform="translate(0, 32)">
       <rect width="252" height="72" rx="10" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
       <text x="16" y="26" fill="#64748B" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11">PUBLIC SYSTEMS</text>
@@ -54,10 +52,8 @@
     </g>
   </g>
 
-  <!-- Vertical Divider -->
   <line x1="588" y1="28" x2="588" y2="226" stroke="#1E293B" stroke-width="1.2"/>
 
-  <!-- Right Panel: Animated Language Distribution -->
   <text x="620" y="40" fill="#94A3B8" font-family="ui-monospace, SFMono-Regular, monospace" font-size="11.5" font-weight="600" letter-spacing="0.9">CODEBASE LANGUAGE DISTRIBUTION (LIVE)</text>
     <g transform="translate(620, 66)">
       <circle cx="5" cy="7" r="4.5" fill="#00ADD8"/>
@@ -105,6 +101,5 @@
       </rect>
     </g>
 
-  <!-- Footer -->
-  <text x="1164" y="246" text-anchor="end" fill="#475569" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">Synced via GitHub Actions · 2026-11-19 06:47 UTC</text>
+  <text x="1164" y="246" text-anchor="end" fill="#475569" font-family="ui-monospace, SFMono-Regular, monospace" font-size="10.5">Synced via GitHub Actions · 2026-11-19 06:49 UTC</text>
 </svg>
